@@ -149,6 +149,11 @@ form #log-google
 	background-color: #FF5722;
 	color: #ffffff;
 }
+.fondosection
+{
+		width: 100%;
+		height: 50%;
+}
 /*
 Estilos del slider-------------------------------------------
 */
