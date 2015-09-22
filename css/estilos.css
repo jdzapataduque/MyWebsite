@@ -1,0 +1,262 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: 'Montserrat Alternates', sans-serif;
+}
+ body
+{
+	background-color: #ffffff;
+}
+ul{
+	display:inline;
+	list-style: none;
+	text-align: center;
+}
+h1
+{
+	text-align: center;
+	padding: 0 2em 0 0;
+}
+nav
+{
+	width: 100%;
+	padding: 0 2em 0 1em;
+	position: absolute;
+}
+header
+{
+	background: #32352e;
+	color: #ffffff;
+	padding: 1em;
+	overflow: hidden;
+	height: 23%;
+	width: 100%;
+	position: relative;
+}
+nav{
+	background-color: #1976D2;
+	text-align: center;
+}
+nav ul li{
+	display: inline-block;
+	padding: 1em 3em 1em 1em;
+
+}
+nav ul li .active{
+background: #e94b41;
+}
+nav ul li:hover{
+
+	cursor: pointer;
+	background-color: #2196F3;
+
+}
+nav ul li a{
+	padding: 0 2em 0 0;
+	color: #ffffff;
+}
+a{
+	text-decoration: none;
+}
+#yo
+{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 110px;
+	height: 100px;
+	border-radius: 50%;
+}
+.icon_blancos{
+color: #ffffff;
+}
+
+.menu_bar
+{
+	display: none;
+}
+.social
+{
+	left: 0;
+	position: fixed;
+	top: 55%;
+}
+.social ul
+{
+	list-style: none;
+}
+.social ul li a
+{
+	display: inline-block;
+	padding: 0.5em 0.5em;
+	font-size: 1.3em;
+	background: #000000;
+	text-decoration: none;
+	color: #ffffff;
+}
+.social ul li a:hover
+{
+	background-color: #000000;
+}
+.social ul li .icon-faceb{background-color: #0D47A1;}
+.social ul li .icon-instagram{background-color: #757575;}
+.social ul li .icon-youtube{background-color: #F44336;}
+.social ul li .icon-google-plus{background-color: #FF5722;}
+.social ul li .icon-github{background-color: #212121;}
+
+.menu-fixed
+{
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	width: 100%;
+	opacity: 0.8;
+}
+form
+{
+padding: 2em;
+text-align: center;
+background-color: #32352e;
+display: none;
+}
+.espacio
+{
+	margin: 3.2em 0 0 0;
+}
+form a
+{
+	padding: 1.2em;
+	border-radius: 5px;
+
+}
+div form li
+{
+	list-style-type: none;
+	display: inline-block;
+	padding: 0 2em 0 1em;
+}
+form #log-faceb
+{
+	background-color: #0D47A1;
+	color: #ffffff;
+	width: 10px;
+}
+form #log-google
+{
+	background-color: #FF5722;
+	color: #ffffff;
+}
+/*
+Estilos del slider-------------------------------------------
+*/
+.jssorb21 {
+					 position: absolute;
+					 bottom: 26px;
+					 left: 6px;
+			 }
+			 .jssorb21 div, .jssorb21 div:hover, .jssorb21 .av {
+					 position: absolute;
+					 /* size of bullet elment */
+					 width: 19px;
+					 height: 19px;
+					 text-align: center;
+					 line-height: 19px;
+					 color: ;
+					 font-size: 12px;
+					 background: url(../img/b21.png) no-repeat;
+					 overflow: hidden;
+					 cursor: pointer;
+			 }
+			 .jssorb21 div { background-position: -5px -5px; }
+			 .jssorb21 div:hover, .jssorb21 .av:hover { background-position: -35px -5px; }
+			 .jssorb21 .av { background-position: -65px -5px; }
+			 .jssorb21 .dn, .jssorb21 .dn:hover { background-position: -95px -5px; }
+			 .jssora21l, .jssora21r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 55px;
+            height: 55px;
+            cursor: pointer;
+            background: url(../img/a21.png) center center no-repeat;
+            overflow: hidden;
+        }
+        .jssora21l { background-position: -3px -33px; top: 123px; left: 8px; }
+        .jssora21r { background-position: -63px -33px; top: 123px; right: 8px; }
+        .jssora21l:hover { background-position: -123px -33px; }
+        .jssora21r:hover { background-position: -183px -33px; }
+        .jssora21l.jssora21ldn { background-position: -243px -33px; }
+        .jssora21r.jssora21rdn { background-position: -303px -33px; }
+/*
+Para dispositivos móviles-------------------------------------------
+*/
+
+@media screen and (max-width:800px){
+	nav ul li {
+		display: block;
+		float: none;
+		border-bottom: 1px solid #ffffff;
+	}
+	.espacio
+	{
+		margin: 0;
+
+	}
+	.espacio div form li
+	{
+		display: block;
+	}
+	div form li
+	{
+		padding: 2.8em 3em 0 3em;
+		margin: 0 0 0 0;
+		display: block;
+	}
+	div form .upface
+	{
+		padding-top: 0;
+	}
+	form
+	{
+		margin-top: 0;
+	}
+
+	.menu_bar
+	{
+		display: block;
+		width: 100%;
+	}
+	.menu_bar .btn_menu{
+		display: block;
+		padding: 20px;
+		color: #ffffff;
+		font-size: 1.5em;
+		background: #1976D2;
+		text-decoration: none;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	.menu_bar span
+	{
+		float: center;
+	}
+	h1{
+		padding: 0 0 0 3.2em;
+	}
+	#slider1_container
+	{
+		display: none;
+	}
+}
+@media screen and (max-width:400px){
+	div form li
+	{
+		padding-left: 0;
+		padding-right: 0;
+		display: block;
+	}
+}
