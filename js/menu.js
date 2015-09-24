@@ -1,5 +1,5 @@
 	$(document).ready(main);
-	var cont=0;
+var contador = 1;
 	function main () {
 
 		$('.menu_bar').click(efecto);
@@ -7,10 +7,19 @@
 	}
 	function efecto()
 	{
-
-			$('nav').slideToggle();
-
+		//$('nav').slideToggle();
+		if(contador == 1){
+			$('nav').animate({
+				left: '0'
+			});
+			contador = 0;
+		} else {
+			contador = 1;
+			$('nav').animate({
+				left: '-100%'
+			});
 	}
+}
 	function mostarFormulario()
 	{
 		$('#formulario').slideToggle();
