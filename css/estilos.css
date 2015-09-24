@@ -154,6 +154,28 @@ form #log-google
 		width: 100%;
 		height: 50%;
 }
+.contactobtn
+{
+	position: absolute;
+	right: 45.5%;
+	top: 80%;
+}
+.contactobtn a
+{
+padding: 1.3em;
+background:#2196F3;
+color: #ffffff;
+font-family: 'Dosis', sans-serif;
+border: none;
+font-size: 1.2em;
+border-radius: 5px;
+}
+.contactobtn a:hover
+{
+	background:#ffffff;
+	color: #2196F3;
+	transition: 0.5s;
+}
 /*
 Estilos del slider-------------------------------------------
 */
@@ -204,6 +226,10 @@ Para dispositivos móviles-------------------------------------------
 		display: block;
 		float: none;
 		border-bottom: 1px solid #ffffff;
+	}
+	.contactobtn
+	{
+	display: none;
 	}
 	.espacio
 	{
@@ -263,5 +289,9 @@ Para dispositivos móviles-------------------------------------------
 		padding-left: 0;
 		padding-right: 0;
 		display: block;
+	}
+	.contactobtn
+	{
+	display: none;
 	}
 }
