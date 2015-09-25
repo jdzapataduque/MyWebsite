@@ -3,6 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<!-- Referencias para windows js ----------------------------------->
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="js/jquery.windows.js"></script>
+	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet"  href="css/normalize.css">
 	<link rel="stylesheet"  href="css/estilos.css">
 	<link rel="stylesheet"  href="style.css">
@@ -21,16 +25,16 @@
 	<h1>Juan Diego Zapata Duque</h1>
 	</header>
 	<div class="menu_bar">
-		<a href="" class="btn_menu"><span class="icon-menu" id="iconmenu"></span></a>
+		<a href="#" class="btn_menu"><span class="icon-menu" id="iconmenu"></span></a>
 	</div>
 		<nav class="menu">
 			<ul>
 				<li id="inicio"><span class="icon-home icon_blancos"></span>
 				<a href="index.html"> Inicio</a></li>
 				<li id="about"><span class="icon-me icon_blancos"></span>
-				<a href=""> Acerca de</a></li>
-				<li id="contact"><span class="icon-mail icon_blancos"></span><a href=""> Contacto</a></li>
-				<li id="login"><a href=""><strong>Iniciar Sesión</strong></a></li>
+				<a href="#"> Acerca de</a></li>
+				<li id="contact"><span class="icon-mail icon_blancos"></span><a href="#0"> Contacto</a></li>
+				<li id="login"><a href="#"><strong>Iniciar Sesión</strong></a></li>
 			</ul>
 		</nav>
 		<div class="social">
@@ -44,8 +48,8 @@
 		</div>
 		<div class="espacio">
 		<form action="" id="formulario">
-		<li class="upface"><a href="" id="log-faceb"><span class="icon-faceb"></span> | Inicia con Facebook</a></li>
-		<li><a href="" id="log-google"><span class="icon-google-plus"></span> | Inicia con Google</a></li>
+		<li class="upface"><a href="#" id="log-faceb"><span class="icon-faceb"></span> | Inicia con Facebook</a></li>
+		<li><a href="#" id="log-google"><span class="icon-google-plus" id="iconmenu"></span> | Inicia con Google</a></li>
 		</form>
 		</div>
 		<!-- Slider de noticias ----------------------------------->
@@ -63,21 +67,6 @@
 		 <!-- Slides Container -->
 		 <div data-u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1300px;
 				 height: 500px; overflow: hidden;">
-				 <div>
-						 <img data-u="image" src="img/1920/mac.jpg" alt="" />
-						 <div data-u="caption" data-t="NO" data-t3="RTT|2" data-r3="137.5%" data-du3="3000" data-d3="500" style="position: absolute; width: 445px; height: 300px; top: 100px; left: 600px;">
-						 </div>
-						 <div data-u="caption" data-t="RTT|2" data-r="-75%" data-du="1600" data-d="2500" data-t2="NO" style="position: absolute; width: 470px; height: 220px; top: 120px; left: 650px;">
-						 </div>
-						 <div style="position: absolute; width: 480px; height: 120px; top: 30px; left: 30px; padding: 5px;
-								 text-align: left; line-height: 60px; text-transform: uppercase; font-size: 50px;
-										 color: #FFFFFF;">
-						 </div>
-						 <div style="position: absolute; width: 480px; height: 120px; top: 300px; left: 30px; padding: 5px;
-								 text-align: left; line-height: 36px; font-size: 30px;
-										 color: #FFFFFF;">
-						 </div>
-				 </div>
 				 <div>
 						 <img data-u="image" src="img/1920/mac2.jpg" alt="" />
 						 <div style="position: absolute; width: 480px; height: 120px; top: 30px; left: 30px; padding: 5px;
@@ -122,9 +111,12 @@
  <div class="contactobtn">
  		<a href="mailto:jdzapataduque@gmail.com">Escríbeme</a>
 		</div>
-<section>
-	<img src="img/1920/fondo.jpg" class="fondosection" />
-</section>
+		<section id="0" class="window">
+             <div class="content">
+                     <h3>windows</h3>
+                     <h2>a handy, loosely-coupled jQuery plugin for full-screen scrolling windows</h2>
+             </div>
+         </section>
 	<script src="https://code.jquery.com/jquery-1.11.2.min.js">
 	</script>
 	<script src="js/menufijo.js"></script>
@@ -213,5 +205,22 @@
 					//responsive code end
 			});
 	</script>
+	<script>
+
+					 $(document).ready(function(){
+
+							 var $windows = $('.window');
+
+							 $windows.windows({
+									 snapping: true,
+									 snapSpeed: 500,
+									 snapInterval: 1100,
+									 onScroll: function(s){},
+									 onSnapComplete: function($el){},
+									 onWindowEnter: function($el){}
+							 });
+
+					 });
+			 </script>
 </body>
 </html>

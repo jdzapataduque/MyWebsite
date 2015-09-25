@@ -2,7 +2,7 @@
 var contador = 0;
 	function main () {
 
-		$('.menu_bar').click(efecto);
+		$('#iconmenu').click(efecto);
 		$('#login').click(mostarFormulario);
 	}
 	function efecto()
