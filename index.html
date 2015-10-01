@@ -3,9 +3,6 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<!-- Referencias para windows js ----------------------------------->
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script src="js/jquery.windows.js"></script>
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet"  href="css/normalize.css">
 	<link rel="stylesheet"  href="css/estilos.css">
@@ -111,12 +108,12 @@
  <div class="contactobtn">
  		<a href="mailto:jdzapataduque@gmail.com">Escríbeme</a>
 		</div>
-		<section id="0" class="window">
-             <div class="content">
-                     <h3>windows</h3>
-                     <h2>a handy, loosely-coupled jQuery plugin for full-screen scrolling windows</h2>
-             </div>
-         </section>
+		<section>
+			<div class="contacto">
+			<div>Juan
+			<img src="img/1920/mac.jpg" alt=""></div>
+			</div>
+		</section>
 	<script src="https://code.jquery.com/jquery-1.11.2.min.js">
 	</script>
 	<script src="js/menufijo.js"></script>
@@ -205,22 +202,5 @@
 					//responsive code end
 			});
 	</script>
-	<script>
-
-					 $(document).ready(function(){
-
-							 var $windows = $('.window');
-
-							 $windows.windows({
-									 snapping: true,
-									 snapSpeed: 500,
-									 snapInterval: 1100,
-									 onScroll: function(s){},
-									 onSnapComplete: function($el){},
-									 onWindowEnter: function($el){}
-							 });
-
-					 });
-			 </script>
 </body>
 </html>
