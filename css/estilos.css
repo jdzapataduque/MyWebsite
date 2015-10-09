@@ -25,6 +25,7 @@ nav
 	width: 100%;
 	padding: 0 2em 0 1em;
 	position: absolute;
+	text-align: center;
 }
 header
 {
@@ -36,27 +37,10 @@ header
 	width: 100%;
 	position: relative;
 }
-nav{
-	background-color: #1976D2;
-	text-align: center;
-}
 nav ul li{
 	display: inline-block;
 	padding: 1em 3em 1em 1em;
-
-}
-nav ul li .active{
-background: #e94b41;
-}
-nav ul li:hover{
-
-	cursor: pointer;
-	background-color: #2196F3;
-
-}
-nav ul li a{
-	padding: 0 2em 0 0;
-	color: #ffffff;
+	text-align: center;
 }
 a{
 	text-decoration: none;
@@ -72,11 +56,6 @@ a{
 }
 .icon_blancos{
 color: #ffffff;
-}
-
-.menu_bar
-{
-	display: none;
 }
 .social
 {
@@ -115,118 +94,18 @@ color: #ffffff;
 	width: 100%;
 	opacity: 0.8;
 }
-form
+.menu-boot nav
 {
-padding: 2em;
-text-align: center;
-background-color: #32352e;
-display: none;
-}
-.espacio
-{
-	margin: 3.2em 0 0 0;
-}
-form a
-{
-	padding: 1.2em;
-	border-radius: 5px;
+	color: #ffffff;
+	background-color:#0D47A1 ;
+	font-size: 1.2em;
+	text-align: center;
 
 }
-div form li
+div nav
 {
-	list-style-type: none;
-	display: inline-block;
-	padding: 0 2em 0 1em;
+
 }
-form #log-faceb
-{
-	background-color: #0D47A1;
-	color: #ffffff;
-	width: 10px;
-}
-form #log-google
-{
-	background-color: #FF5722;
-	color: #ffffff;
-}
-.fondosection
-{
-		width: 100%;
-		height: 50%;
-}
-.contactobtn
-{
-	position: absolute;
-	right: 45.5%;
-	top: 80%;
-}
-.contactobtn a
-{
-padding: 1.3em;
-background:#2196F3;
-color: #ffffff;
-font-family: 'Dosis', sans-serif;
-border: none;
-font-size: 1.2em;
-border-radius: 5px;
-}
-.contactobtn a:hover
-{
-	background:#ffffff;
-	color: #2196F3;
-	transition: 0.5s;
-}
-.contacto{
-	width: 100%;
-	height: auto;
-	background-color: rgb(98, 14, 185);
-}
-.contacto div img
-{
-	width: 100%;
-	height: 50%;
-}
-/*
-Estilos del slider-------------------------------------------
-*/
-.jssorb21 {
-					 position: absolute;
-					 bottom: 26px;
-					 left: 6px;
-			 }
-			 .jssorb21 div, .jssorb21 div:hover, .jssorb21 .av {
-					 position: absolute;
-					 /* size of bullet elment */
-					 width: 19px;
-					 height: 19px;
-					 text-align: center;
-					 line-height: 19px;
-					 color: ;
-					 font-size: 12px;
-					 background: url(../img/b21.png) no-repeat;
-					 overflow: hidden;
-					 cursor: pointer;
-			 }
-			 .jssorb21 div { background-position: -5px -5px; }
-			 .jssorb21 div:hover, .jssorb21 .av:hover { background-position: -35px -5px; }
-			 .jssorb21 .av { background-position: -65px -5px; }
-			 .jssorb21 .dn, .jssorb21 .dn:hover { background-position: -95px -5px; }
-			 .jssora21l, .jssora21r {
-            display: block;
-            position: absolute;
-            /* size of arrow element */
-            width: 55px;
-            height: 55px;
-            cursor: pointer;
-            background: url(../img/a21.png) center center no-repeat;
-            overflow: hidden;
-        }
-        .jssora21l { background-position: -3px -33px; top: 123px; left: 8px; }
-        .jssora21r { background-position: -63px -33px; top: 123px; right: 8px; }
-        .jssora21l:hover { background-position: -123px -33px; }
-        .jssora21r:hover { background-position: -183px -33px; }
-        .jssora21l.jssora21ldn { background-position: -243px -33px; }
-        .jssora21r.jssora21rdn { background-position: -303px -33px; }
 /*
 Para dispositivos móviles-------------------------------------------
 */
