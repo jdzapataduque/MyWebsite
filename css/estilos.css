@@ -10,22 +10,10 @@
 {
 	background-color: #ffffff;
 }
-ul{
-	display:inline;
-	list-style: none;
-	text-align: center;
-}
 h1
 {
 	text-align: center;
 	padding: 0 2em 0 0;
-}
-nav
-{
-	width: 100%;
-	padding: 0 2em 0 1em;
-	position: absolute;
-	text-align: center;
 }
 header
 {
@@ -33,25 +21,21 @@ header
 	color: #ffffff;
 	padding: 1em;
 	overflow: hidden;
-	height: 23%;
+	height: 115px;
 	width: 100%;
 	position: relative;
-}
-nav ul li{
-	display: inline-block;
-	padding: 1em 3em 1em 1em;
-	text-align: center;
 }
 a{
 	text-decoration: none;
 }
-#yo
+header #yo
 {
 	position: absolute;
 	top: 10px;
 	left: 10px;
 	width: 110px;
 	height: 100px;
+	margin-bottom: 20px;
 	border-radius: 50%;
 }
 .icon_blancos{
@@ -94,93 +78,30 @@ color: #ffffff;
 	width: 100%;
 	opacity: 0.8;
 }
-.menu-boot nav
+/*
+estilos del navv------------------------------------------
+*/
+.fondo
+{
+	background-color: #1E88E5;
+	color: #ffffff;
+}
+
+#navegacion-fm ul li a
 {
 	color: #ffffff;
-	background-color:#0D47A1 ;
-	font-size: 1.2em;
-	text-align: center;
-
-}
-div nav
-{
-
+	font-size: 1.3em;
 }
 /*
 Para dispositivos móviles-------------------------------------------
 */
 
 @media screen and (max-width:800px){
-	nav ul li {
-		display: block;
-		float: none;
-		border-bottom: 1px solid #ffffff;
-	}
-	.contactobtn
-	{
-	display: none;
-	}
-	.espacio
-	{
-		margin: 0;
 
-	}
-	.espacio div form li
-	{
-		display: block;
-	}
-	div form li
-	{
-		padding: 2.8em 3em 0 3em;
-		margin: 0 0 0 0;
-		display: block;
-	}
-	div form .upface
-	{
-		padding-top: 0;
-	}
-	form
-	{
-		margin-top: 0;
-	}
-
-	.menu_bar
-	{
-		display: block;
-		width: 100%;
-	}
-	.menu_bar .btn_menu{
-		display: block;
-		padding: 20px;
-		color: #ffffff;
-		font-size: 1.5em;
-		background: #1976D2;
-		text-decoration: none;
-		-webkit-box-sizing: border-box;
-		-moz-box-sizing: border-box;
-		box-sizing: border-box;
-	}
-	.menu_bar span
-	{
-		float: center;
-	}
 	h1{
 		padding: 0 0 0 3.2em;
 	}
-	#slider1_container
-	{
-		display: none;
-	}
 }
 @media screen and (max-width:400px){
-	div form li
-	{
-		padding-left: 0;
-		padding-right: 0;
-		display: block;
-	}
-	.contactobtn
-	{
-	display: none;
-	}
+
 }
