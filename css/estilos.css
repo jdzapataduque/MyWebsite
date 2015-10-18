@@ -10,7 +10,11 @@
 {
 	background-color: #ffffff;
 }
-.navbar{
+/*
+Empiezan estilos del nav----------------------------------------------------
+*/
+.navbar
+{
     width:100%;
 }
 .navbar-default {
@@ -20,8 +24,6 @@
     text-transform: uppercase;
     display: inline-block;
     text-align: center;
-    position:fixed;
-
 }
 .navbar-nav{
     margin: 0 auto;
@@ -64,6 +66,9 @@ background-color: transparent;
 .navbar-default .navbar-nav>li>a:hover {
     color: #CFD8DC;
 }
+/*
+Terminan estilos del nav--------------------------------------------------
+*/
 h1
 {
 	text-align: center;
@@ -132,9 +137,6 @@ color: #ffffff;
 	width: 100%;
 	opacity: 0.8;
 }
-/*
-estilos del navv------------------------------------------
-*/
 .fondo
 {
 	background-color: #1E88E5;
@@ -146,6 +148,10 @@ estilos del navv------------------------------------------
 	color: #ffffff;
 	font-size: 1.3em;
 }
+span
+{
+	font-size: 1em;
+}
 /*
 Para dispositivos móviles-------------------------------------------
 */
@@ -153,9 +159,19 @@ Para dispositivos móviles-------------------------------------------
 @media screen and (max-width:800px){
 
 	h1{
-		padding: 0 0 0 3.2em;
+		padding: 0 0 0 3.6em;
 	}
 }
 @media screen and (max-width:400px){
-
+	h1{
+		padding: 0 0 4em 4.1em;
+	}
+	header
+	{
+		padding: 0 0 2em 0;
+	}
+	.navbar-default
+	{
+opacity: 0.8;
+	}
 }

@@ -2,13 +2,13 @@ $(document).ready(menufixed);
 
 	function menufixed () {
 
-	var altura = $('.menu').offset().top;
+	var altura = $('.navbar .navbar-default .navbar-static-top').offset().top;
 
 	$(window).on('scroll', function(){
 		if ( $(window).scrollTop() > altura ){
-			$('.menu').addClass('menu-fixed');
+			$('.navbar .navbar-default .navbar-static-top').addClass('menu-fixed');
 		} else {
-			$('.menu').removeClass('menu-fixed');
+			$('.navbar .navbar-default .navbar-static-top').removeClass('menu-fixed');
 		}
 	});
 	}
